@@ -52,7 +52,7 @@ def tick():
         if time_min < 10:
             time_min = "0" + str(time_min)
         label_time.configure(text=f"{time_min}:{time_sec}")
-        root.after(1, tick)
+        root.after(1000, tick)
 
 
 def pause():
